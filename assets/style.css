@@ -1,0 +1,55 @@
+@font-face{font-family:"Canela Condensed";src:url("fonts/CanelaCondensed-Light.otf") format("opentype");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Canela Condensed Medium";src:url("fonts/CanelaCondensed-Medium.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+*{box-sizing:border-box}
+:root{--ground:#f6f0e6;--ink:#2b1d14;--accent:#7d1a2c;--soft:#d9cdb8}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 18px/1.6 "Hanken Grotesk",system-ui,sans-serif}
+a{color:var(--ink);text-decoration:none}a:hover,a:focus-visible{color:var(--accent)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 40px}
+.serif{font-family:"Canela Condensed",Georgia,serif;font-weight:400}
+.mono{font-family:"DM Mono",ui-monospace,monospace}
+header.site{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding:32px 0}
+.brand{font-family:"Canela Condensed",Georgia,serif;font-size:32px}
+nav.main{display:flex;flex-wrap:wrap;gap:32px;font-size:16px}
+nav.main a{display:inline-flex;align-items:center;min-height:44px}
+nav.main a[aria-current]{border-bottom:1px solid var(--ink)}
+h1,h2,h3{font-family:"Canela Condensed",Georgia,serif;font-weight:400;margin:0}
+h1{font-family:"Canela Condensed Medium",Georgia,serif}
+h1.hero{font-size:clamp(64px,13vw,184px);line-height:.95;letter-spacing:-.03em;max-width:1100px}
+h1.hero em{font-style:normal;color:var(--accent)}
+h1.page{font-size:clamp(44px,7vw,96px);line-height:1;letter-spacing:-.02em}
+h2,h3{font-size:clamp(34px,4.4vw,56px);line-height:1.1}
+.hero-sec{display:flex;flex-direction:column;gap:56px;padding:120px 0 112px}
+.hero-foot{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--ink);padding-top:32px}
+.hero-foot p{margin:0;max-width:520px;font-size:24px;line-height:1.4}
+.btn{display:inline-flex;align-items:center;min-height:44px;background:var(--ink);color:var(--ground);padding:14px 28px;font-size:16px}
+.btn:hover,.btn:focus-visible{background:var(--accent);color:var(--ground)}
+.linkline{display:inline-flex;align-items:center;min-height:44px;border-bottom:1px solid var(--ink);font-size:16px;align-self:flex-start}
+section.row{border-top:1px solid var(--ink);padding:72px 0;display:flex;flex-wrap:wrap;gap:48px}
+section.row>.tag{flex:1 1 200px;font-size:16px}
+section.row>.body{flex:3 1 520px;display:flex;flex-direction:column;gap:24px}
+.body p{margin:0;max-width:680px}
+.list{display:flex;flex-direction:column;border-top:1px solid var(--ink);margin-top:16px}
+.list a{display:flex;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--ink);font-family:"Canela Condensed",Georgia,serif;font-size:clamp(26px,3vw,36px);line-height:1.2}
+.dark{background:var(--ink);color:var(--ground)}
+.dark a{color:var(--ground)}.dark a:hover{color:var(--soft)}
+.kernel{padding:96px 0}.kernel h2{font-size:clamp(44px,7vw,96px);line-height:1;letter-spacing:-.02em}
+.kernel p{font-size:22px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;border-top:1px solid var(--ink);padding-top:32px}
+.cols p{margin:0}
+.split{display:flex;flex-wrap:wrap;gap:32px}
+.split p:first-child{flex:2 1 340px}
+.pull{flex:1 1 240px;font-family:"Canela Condensed",Georgia,serif;font-size:30px;line-height:1.25}
+.clients{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));border-top:1px solid var(--ink);border-left:1px solid var(--ink);margin-top:16px}
+.clients a,.clients span{padding:36px 24px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);font-family:"Canela Condensed",Georgia,serif;font-size:30px;line-height:1.15}
+.ping h2{font-size:clamp(44px,7vw,96px);line-height:1;letter-spacing:-.02em}
+.page-head{padding:96px 0 72px;display:flex;flex-direction:column;gap:24px}
+.crumb{font-size:15px}
+.todo{border:1px dashed var(--ink);padding:24px;max-width:680px;font-size:16px}
+footer.site{padding:72px 0 40px}
+footer.site .wrap{display:flex;flex-direction:column;gap:40px}
+.tagline{font-family:"Canela Condensed",Georgia,serif;font-size:40px}
+.flinks{display:flex;flex-wrap:wrap;gap:24px 32px}
+.flinks a{display:inline-flex;align-items:center;min-height:44px}
+.fine{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;font-size:14px;color:var(--soft)}
+@media(max-width:640px){.wrap{padding:0 20px}.hero-sec{padding:64px 0}nav.main{gap:16px}section.row{padding:48px 0;gap:24px}}
